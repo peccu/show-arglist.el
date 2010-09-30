@@ -6,8 +6,8 @@ Install
 -------
 load-pathに置いたら.emacsとかinit.elにこんな感じで書きます．
 
-  (require 'show-arglist)
-  (show-arglist-mode t)
+    (require 'show-arglist)
+    (show-arglist-mode t)
 
 Repository
 ----------

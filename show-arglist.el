@@ -42,7 +42,6 @@ after `show-arglist-delay' seconds of Emacs idle time."
   ;; First get rid of the old idle timer.
   (if show-arglist-idle-timer
       (cancel-timer show-arglist-idle-timer))
-  (setq show-arglist-idle-timer nil)
   ;; If show-arglist-mode is enabled in some buffer now,
   ;; set up a new timer.
   (when (memq t (mapcar (lambda (buffer)
@@ -80,8 +79,7 @@ after `show-arglist-delay' seconds of Emacs idle time."
                       (format "\nMacro: %s" (format-kbd-macro def)))
                      (t "[Missing arglist.  Please make a bug report.]")))
                (high (help-highlight-arguments use "")))
-          (let ((fill-begin (point)))
-            (setq header-line-format (car high)))
+          (setq header-line-format (car high))
           (let ((obsolete (and
                            ;; function might be a lambda construct.
                            (symbolp function)

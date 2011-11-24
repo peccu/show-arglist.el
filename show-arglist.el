@@ -84,6 +84,7 @@ after `show-arglist-delay' seconds of Emacs idle time."
                            ;; function might be a lambda construct.
                            (symbolp function)
                            (get function 'byte-obsolete-info))))
+            ;; obsoleteの時の記述
             (when obsolete
               (setq header-line-format (concat header-line-format " (obsolete"
                                                (when (nth 2 obsolete)

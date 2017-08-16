@@ -1,10 +1,11 @@
 ;;; show-arglist.el --- showing arglist of function at point
 
-;; Copyright (C) 2010 Kentarou Shimatani
+;; Copyright (C) 2017 Kentarou Shimatani
 
 ;; Author: Kentaro Shimatani <kentarou.shimatani@gmail.com>
 ;; Created: 1 Oct 2010
 ;; Keywords: function
+;; License: GNU General Public License v3.0
 
 ;;; Commentary:
 ;; Put this into your ~/.emacs.d/init.d or ~/.emacs:
